@@ -1,5 +1,5 @@
 ---
-layout: archives
+layout: page
 title: Enhancements
 icon: fas fa-archive
 order: 3
