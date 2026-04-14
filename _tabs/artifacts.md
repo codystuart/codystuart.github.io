@@ -4,8 +4,27 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Enhancement One: 
+# Enhancement One: Software Design and Engineering
 
-# Enhancement Two:
+## Original
 
-# Enhancement Three:
+```
+
+```
+
+## Enhanced
+
+```
+```
+
+# Enhancement Two: Algorithms and Data Structures
+
+## Original 
+
+## Enhanced
+
+# Enhancement Three: Databases
+
+## Original 
+
+## Enhanced
