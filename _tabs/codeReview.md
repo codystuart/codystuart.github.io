@@ -9,4 +9,4 @@ order: 2
 
 Below is the code review walkthrough for my existing artifacts. This video covers the existing functionality, code analysis for improvements, and the planned enhancements for Software Engineering, Algorithms, and Databases.
 
-{% include embed/youtube.html id='hklMbQFVQ-Y'}
+{% include embed/youtube.html id='hklMbQFVQ-Y' %}
