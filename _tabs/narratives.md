@@ -4,19 +4,28 @@ title: Narratives
 icon: fas fa-stream
 order: 1
 ---
-
+.narrative-highlight {
+    background-color: rgba(64, 132, 214, 0.1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 5px solid #4084d6;
+    border-radius: 4px;
+}
 ## Enhancement One Narrative: Software Design and Engineering
 The artifact in question is a C++ file designed to showcase XOR bitwise encryption. It was originally completed for the Secure Coding course during the 2026 January to March term. The original artifact takes in an input file, extracts some information from said file, then encrypts the file, and decrypts the file to very symmetric properties of XOR. 
 I selected this artifact for my ePortfolio because I wanted to showcase my ability to learn a new language and convert pre-existing code to that new language. I rather enjoy C++ and it’s certainly a useful language, but there are new languages like Golang which have different uses and efficiencies. I made a few improvements from the original artifact. For starters I felt that the encryption key being the hardcoded word “password” was not secure enough, so I created a function designed to generate a cryptographically secure key at runtime. Choosing Golang also adds memory safety to the code as an improvement. This enhancement showcases language refactoring, advanced programming with the use of Golangs byte slices and struct-based composition, and quality assurance with Go’s error handling for I/O.
 With this code refactor I believe I met outcomes 4 and 5. I demonstrated an ability to use well-founded and innovative techniques by transitioning to a modern memory safe language, with a new architecture. I also successfully developed a security mindset by replacing the vulnerable hardcoded key. 
 I learned the importance of working with immutability in Go. Unlike C++ where strings are easily manipulated in place, Go requires working with byte slices for bitwise operations, which is a safer and more efficient approach to data transformation. One primary challenge was replicating the specific C++ file-parsing logic in Go. I initially struggled with the getStudentName function returning a null value because I was parsing the actual filename rather than the contents of the actual file. I overcame this by debugging the pos and studentName variables which led me to realize my error.  
 
+<div class="narrative-highlight">
 ---
 ## Enhancement Two Narrative: Algorithms and Data Structures
 The artifact I’ve chosen to enhance for algorithms and data structures is the ContactService.java file from CS-320 Software Test, Automation, and Quality Assurance. The original artifact was centered around developing java code and using junit to perform unit testing on that code. 
 I’ve included this artifact in ePortfolio as I wanted to showcase an ability to find code that can be improved through advanced algorithms and data structures. The original artifact uses a hashmap to store and lookup contacts, in modern applications however this would be missing something, the ability to search for contact names based on a part of a name. The idea of adding a prefix tree to enable partial searching made sense to me as in my cell phone I can search for contact names by only a portion of the name. I also kept the spirit of the original assignment by incorporating unit testing for the Trie system I added. This also helps me ensure that my added code is functioning. 
 Through this enhancement I’ve achieved outcomes 3 and 6 by designing a solution that balances the trade-off between increased memory and significantly faster searching. As well including the Trie I’ve met the industry-specific goal of scalable data retrieval. 
 What I learned from this enhancement was how to adapt a classic data structure to store complex objects, as well as gaining a deeper understanding of how to maintain data integrity across multiple structures like a hashmap and a trie simultaneously. 
+</div>
+
 ---
 ## Enhancement Three Narrative: Databases
 For enhancement three, I’ve selected the database from CS-340 Client/Server development. This course required us to create a dashboard that pulls information from a Mongo database and displays it with options to filter the information. The information is intended to be filtered based on customer requirements to select specific information of local dogs that allows the customer to find potential rescue dogs. 
