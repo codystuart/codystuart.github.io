@@ -19,7 +19,7 @@ I learned the importance of working with immutability in Go. Unlike C++ where st
 
 ---
 <div class="narrative-highlight">
-## Enhancement Two Narrative: Algorithms and Data Structures
+<h2> Enhancement Two Narrative: Algorithms and Data Structures </h2>
 The artifact I’ve chosen to enhance for algorithms and data structures is the ContactService.java file from CS-320 Software Test, Automation, and Quality Assurance. The original artifact was centered around developing java code and using junit to perform unit testing on that code. 
 I’ve included this artifact in ePortfolio as I wanted to showcase an ability to find code that can be improved through advanced algorithms and data structures. The original artifact uses a hashmap to store and lookup contacts, in modern applications however this would be missing something, the ability to search for contact names based on a part of a name. The idea of adding a prefix tree to enable partial searching made sense to me as in my cell phone I can search for contact names by only a portion of the name. I also kept the spirit of the original assignment by incorporating unit testing for the Trie system I added. This also helps me ensure that my added code is functioning. 
 Through this enhancement I’ve achieved outcomes 3 and 6 by designing a solution that balances the trade-off between increased memory and significantly faster searching. As well including the Trie I’ve met the industry-specific goal of scalable data retrieval. 
