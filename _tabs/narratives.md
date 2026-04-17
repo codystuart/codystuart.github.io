@@ -4,13 +4,7 @@ title: Narratives
 icon: fas fa-stream
 order: 1
 ---
-.narrative-highlight {
-    background-color: rgba(64, 132, 214, 0.1);
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-left: 5px solid #4084d6;
-    border-radius: 4px;
-}
+
 ## Enhancement One Narrative: Software Design and Engineering
 The artifact in question is a C++ file designed to showcase XOR bitwise encryption. It was originally completed for the Secure Coding course during the 2026 January to March term. The original artifact takes in an input file, extracts some information from said file, then encrypts the file, and decrypts the file to very symmetric properties of XOR. 
 I selected this artifact for my ePortfolio because I wanted to showcase my ability to learn a new language and convert pre-existing code to that new language. I rather enjoy C++ and it’s certainly a useful language, but there are new languages like Golang which have different uses and efficiencies. I made a few improvements from the original artifact. For starters I felt that the encryption key being the hardcoded word “password” was not secure enough, so I created a function designed to generate a cryptographically secure key at runtime. Choosing Golang also adds memory safety to the code as an improvement. This enhancement showcases language refactoring, advanced programming with the use of Golangs byte slices and struct-based composition, and quality assurance with Go’s error handling for I/O.

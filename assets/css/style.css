@@ -1,0 +1,11 @@
+---
+---
+@import "jekyll-theme-chirpy";
+
+.narrative-highlight {
+    background-color: rgba(64, 132, 214, 0.1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 5px solid #4084d6;
+    border-radius: 4px;
+}
