@@ -12,15 +12,11 @@ With this code refactor I believe I met outcomes 4 and 5. I demonstrated an abil
 I learned the importance of working with immutability in Go. Unlike C++ where strings are easily manipulated in place, Go requires working with byte slices for bitwise operations, which is a safer and more efficient approach to data transformation. One primary challenge was replicating the specific C++ file-parsing logic in Go. I initially struggled with the getStudentName function returning a null value because I was parsing the actual filename rather than the contents of the actual file. I overcame this by debugging the pos and studentName variables which led me to realize my error.  
 
 ---
-<div class="narrative-highlight">
-    <h2> Enhancement Two Narrative: Algorithms and Data Structures </h2>
-    <p>
-        The artifact I’ve chosen to enhance for algorithms and data structures is the ContactService.java file from CS-320 Software Test, Automation, and Quality Assurance. The original artifact was centered around developing java code and using junit to perform unit testing on that code. 
-        I’ve included this artifact in ePortfolio as I wanted to showcase an ability to find code that can be improved through advanced algorithms and data structures. The original artifact uses a hashmap to store and lookup contacts, in modern applications however this would be missing something, the ability to search for contact names based on a part of a name. The idea of adding a prefix tree to enable partial searching made sense to me as in my cell phone I can search for contact names by only a portion of the name. I also kept the spirit of the original assignment by incorporating unit testing for the Trie system I added. This also helps me ensure that my added code is functioning. 
-        Through this enhancement I’ve achieved outcomes 3 and 6 by designing a solution that balances the trade-off between increased memory and significantly faster searching. As well including the Trie I’ve met the industry-specific goal of scalable data retrieval. 
-        What I learned from this enhancement was how to adapt a classic data structure to store complex objects, as well as gaining a deeper understanding of how to maintain data integrity across multiple structures like a hashmap and a trie simultaneously. 
-    </p>
-</div>
+## Enhancement Two Narrative: Algorithms and Data Structures
+The artifact I’ve chosen to enhance for algorithms and data structures is the ContactService.java file from CS-320 Software Test, Automation, and Quality Assurance. The original artifact was centered around developing java code and using junit to perform unit testing on that code. 
+I’ve included this artifact in ePortfolio as I wanted to showcase an ability to find code that can be improved through advanced algorithms and data structures. The original artifact uses a hashmap to store and lookup contacts, in modern applications however this would be missing something, the ability to search for contact names based on a part of a name. The idea of adding a prefix tree to enable partial searching made sense to me as in my cell phone I can search for contact names by only a portion of the name. I also kept the spirit of the original assignment by incorporating unit testing for the Trie system I added. This also helps me ensure that my added code is functioning. 
+Through this enhancement I’ve achieved outcomes 3 and 6 by designing a solution that balances the trade-off between increased memory and significantly faster searching. As well including the Trie I’ve met the industry-specific goal of scalable data retrieval. 
+What I learned from this enhancement was how to adapt a classic data structure to store complex objects, as well as gaining a deeper understanding of how to maintain data integrity across multiple structures like a hashmap and a trie simultaneously. 
 
 ---
 ## Enhancement Three Narrative: Databases
