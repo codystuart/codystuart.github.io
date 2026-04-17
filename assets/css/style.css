@@ -1,6 +1,6 @@
 ---
 ---
-@use "jekyll-theme-chirpy";
+@import "jekyll-theme-chirpy";
 
 .narrative-highlight {
     background-color: rgba(64, 132, 214, 0.1);
