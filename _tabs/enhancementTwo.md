@@ -18,7 +18,7 @@ What I learned from this enhancement was how to adapt a classic data structure t
 
 ### ContactService.java
 <p style="text-indent: 50px; font-style: italic;">
-ContactService.java is a java class file written to support CRUD operations for a contact within an application. In the scope of the CS-320 course, the external application does not exist and instead the focus was on junit testing. This original artifact utilizes a map to store all of the contacts and each contact is stored as a hashmap prov
+ContactService.java is a java class file written to support CRUD operations for a contact within an application. In the scope of the CS-320 course, the external application does not exist and instead the focus was on junit testing. This original artifact utilizes a map to store all of the contacts.
 </p>
 
 ```java
@@ -83,6 +83,10 @@ public class ContactService {
 ## Enhanced
 
 ### Trie.java
+<p style="text-indent: 50px; font-style: italic;">
+Trie.java manages the root of the prefix tree and provides the logic for indexing and searching contacts. It also includes a placeholder main function for testing its functionality. 
+</p>
+
 ```java
 package com.stuart.contacts;
 
@@ -183,6 +187,9 @@ public class Trie {
 ```
 
 ### TrieNode.java
+TrieNode.java provides the structure of the nodes as well as providing a constructor function for creating each node, including the root node. 
+</p>
+
 ```java
 
 /*
@@ -225,4 +232,72 @@ public class TrieNode {
 }
 ```
 
-### Trie
+### TrieTest.java
+TrieTest.java was added to this enhancement to maintain the spirit of the original assignment. Which was to develop junit tests to verify functionality of the Contact and ContactService java classes. This servers two purposes it provides a quality assurance aspect to the application, as well as assists in confirming full functionality of the prefix tree. 
+</p>
+
+```java
+package com.stuart.contacts.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import com.stuart.contacts.*;
+import java.util.List;
+
+class TrieTest {
+	private Trie trie;
+	private Contact con1;
+	private Contact con2;
+	
+	@BeforeEach
+	void setUp() {
+		trie = new Trie();
+		con1 = new Contact("1", "Cody", "Stuart", "1234567890", "123 Lane");
+		con2 = new Contact("2", "Colton", "Smith", "1111222333", "456 Blvd");
+	}
+	
+	@Test
+	void testInsertAndPrefixSearch() {
+		trie.insert("Cody", con1);
+		
+		List<Contact> result = trie.search("Co");
+		assertEquals(1, result.size());
+		assertEquals("Stuart", result.get(0).getLastName());
+	}
+	
+	@Test
+	void testMultipleContactsSamePrefix() {
+		trie.insert(con1.getFirstName(), con1);
+		trie.insert(con2.getFirstName(), con2);
+		
+		List<Contact> result = trie.search("Co");
+		assertEquals(2, result.size());
+	}
+	
+	@Test
+    void testCaseInsensitivity() {
+        trie.insert("Cody", con1);
+        
+        // Search with lowercase to verify normalization
+        List<Contact> results = trie.search("cody");
+        assertFalse(results.isEmpty());
+    }
+
+    @Test
+    void testSearchNonExistentPrefix() {
+        trie.insert("Cody", con1);
+        List<Contact> results = trie.search("Z");
+        assertTrue(results.isEmpty());
+    }
+
+    @Test
+    void testInvalidCharactersInSearch() {
+        trie.insert("Cody", con1);
+        // Verify that symbols don't crash the search logic
+        List<Contact> results = trie.search("Co!");
+        assertEquals(1, results.size());
+    }
+
+}
+```
