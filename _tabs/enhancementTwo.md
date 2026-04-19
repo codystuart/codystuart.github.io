@@ -179,6 +179,7 @@ public class Trie {
 
 ### TrieNode.java
 ```java
+
 /*
 Project: CS 499 Capstone Algorithims and Data Structures Enhancement
 Author: Cody Stuart
@@ -218,3 +219,5 @@ public class TrieNode {
 	}
 }
 ```
+
+### Trie

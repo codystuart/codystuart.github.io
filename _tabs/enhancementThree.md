@@ -14,11 +14,11 @@ This enhancement taught me the value of environment parity. Transition from a ma
 ---
 ## Original
 
+### CRUD_Python_Module.py
 <p style="text-indent: 50px; font-style: italic;">
 CRUD_Python_Module.py utilizes python code to filter information desired to be displayed in the projects web-based dashboard. It utilizes multiple queries for each type of desired parameters in order to obtain this goal. 
 </p>
 
-### CRUD_Python_Module.py
 ```python
 # Example Python Code to Insert a Document 
 
@@ -182,11 +182,11 @@ class AnimalShelter(object):
 
 ```
 
+### ProjectTwoDashboard.ipynb
 <p style="text-indent: 50px; font-style: italic;">
 ProjectTwoDashboard.ipynb is a Python notebook file developed in a pre-built Codio environment. It works in conjunction with the above original Python CRUD module to perform the necessary functions against MongoDB to perform data operations. The dashboard displays a table with selectable radio buttons, a mini-map, and a by-breed pie chart.  
 </p>
 
-### ProjectTwoDashboard.ipynb
 ```python
 # Setup the Jupyter version of Dash
 from jupyter_dash import JupyterDash
@@ -471,11 +471,11 @@ app.run_server()
 ---
 ## Enhanced
 
+### Setup_MongoDB.py
 <p style="text-indent: 50px; font-style: italic;">
 Setup_MongoDB.py was necessary to write to enhance the original artifacts as the original work was performed in a pre-built Codio environment. This script sets up the MongoDB instance with the specified information such as HOST and PORT. As well as migrating the information provided via CSV into the database so that data operations can be performed against a real database. Also the admin user for the database is created here as previously it was added to the admins database, and I felt this should be separate from admins of the entire MongoDB instance. 
 </p>
 
-### Setup_MongoDB.py
 ```python
 """
 Author: Cody Stuart
@@ -530,11 +530,11 @@ if __name__ == "__main__":
     setup_database('aac_shelter_outcomes.csv')
 ```
 
+### CRUD_Python_Module_Enhanced.py
 <p style="text-indent: 50px; font-style: italic;">
 CRUD_Python_Module_Enhanced.py utilizes python code to interact with the MongoDB instance to perform CREATE, READ, UPDATE, DELETE actions. It includes the functions added for this enhancement aggregate and read_rescue. These functions were added to improve speed of data interactions within the database by only retrieving from the database the information we want rather than filtering it on the python side of the code. 
 </p>
 
-### CRUD_Python_Module_Enhanced.py
 ```python
 # Example Python Code to Insert a Document 
 
@@ -734,11 +734,11 @@ class AnimalShelter(object):
             raise Exception("Query paramter is required for deletion.")
 ```
 
+### Dashboard.py
 <p style="text-indent: 50px; font-style: italic;">
 Dashboard.py is a python file developed to replace ProjectTwoDashboard.ipynb. It works in conjunction with the above Python CRUD module to perform the necessary functions against MongoDB to perform data operations. The dashboard displays a table with selectable radio buttons, a mini-map, and a by-breed pie chart.
 </p>
 
-### Dashboard.py
 ```python
 import base64
 import os

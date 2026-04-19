@@ -15,11 +15,11 @@ I learned the importance of working with immutability in Go. Unlike C++ where st
 
 ## Original
 
+### Encryption.cpp
 <p style="text-indent: 50px; font-style: italic;">
 Encryption.cpp takes an input data file which is in plain-text extrapolates information, then using XOR bitwise encryption encrypts the file with plain-text header information, and then decrypts the file with the same plain-text header information outputting each into a file to be compared.
 </p>
 
-### Encryption.cpp
 ```cpp
 // Encryption.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
@@ -165,11 +165,11 @@ int main()
 ---
 ## Enhanced
 
+### main.go
 <p style="text-indent: 50px; font-style: italic;">
 This file named main.go performs similar functionality to the above Encryption.cpp it was converted from. In addition to the original functionality, I've implemented a cryptographically secure key generated at runtime. In a professional environment the key would be offloaded to an external source such as Hashicorp vault, but in the scope of this project it is output with the created files.
 </p>
 
-### main.go
 ```go
 /*
 Project: CS 499 Capstone Software Engineering Enhancement
@@ -293,4 +293,3 @@ func main() {
 	fmt.Println("Transformation Complete.")
 }
 ```
-
