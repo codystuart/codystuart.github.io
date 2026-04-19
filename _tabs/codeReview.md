@@ -2,7 +2,7 @@
 layout: page
 title: Code Review
 icon: fas fa-video
-order: 2
+order: 1
 ---
 
 ## Artifact Code Review
