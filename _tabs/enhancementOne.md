@@ -166,7 +166,7 @@ int main()
 ## Enhanced
 
 <p style="text-indent: 50px; font-style: italic;">
-**This file named main.go performs similar functionality to the above Encryption.cpp it was converted from. In addition to the original functionality, I've implemented a cryptographically secure key generated at runtime. In a professional environment the key would be offloaded to an external source such as Hashicorp vault, but in the scope of this project it is output with the created files.**
+This file named main.go performs similar functionality to the above Encryption.cpp it was converted from. In addition to the original functionality, I've implemented a cryptographically secure key generated at runtime. In a professional environment the key would be offloaded to an external source such as Hashicorp vault, but in the scope of this project it is output with the created files.
 </p>
 
 ### main.go
