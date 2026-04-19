@@ -12,11 +12,10 @@ With this code refactor I believe I met outcomes 4 and 5. I demonstrated an abil
 I learned the importance of working with immutability in Go. Unlike C++ where strings are easily manipulated in place, Go requires working with byte slices for bitwise operations, which is a safer and more efficient approach to data transformation. One primary challenge was replicating the specific C++ file-parsing logic in Go. I initially struggled with the getStudentName function returning a null value because I was parsing the actual filename rather than the contents of the actual file. I overcame this by debugging the pos and studentName variables which led me to realize my error.
 
 ---
-## Artifacts
 
-### Original
+## Original
 
-#### Encryption.cpp
+### Encryption.cpp
 ```cpp
 // Encryption.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
@@ -160,9 +159,9 @@ int main()
 ```
 
 ---
-### Enhanced
+## Enhanced
 
-#### main.go
+### main.go
 ```go
 /*
 Project: CS 499 Capstone Software Engineering Enhancement

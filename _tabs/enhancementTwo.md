@@ -13,11 +13,9 @@ Through this enhancement I’ve achieved outcomes 3 and 6 by designing a solutio
 What I learned from this enhancement was how to adapt a classic data structure to store complex objects, as well as gaining a deeper understanding of how to maintain data integrity across multiple structures like a hashmap and a trie simultaneously. 
 
 ---
-## Artifacts
+## Original
 
-### Original
-
-#### ContactService.java
+### ContactService.java
 ```java
 package com.stuart.contacts;
 
@@ -77,9 +75,9 @@ public class ContactService {
 ```
 
 ---
-### Enhanced
+## Enhanced
 
-#### Trie.java
+### Trie.java
 ```java
 package com.stuart.contacts;
 
@@ -179,7 +177,7 @@ public class Trie {
 }
 ```
 
-#### TrieNode.java
+### TrieNode.java
 ```java
 /*
 Project: CS 499 Capstone Algorithims and Data Structures Enhancement

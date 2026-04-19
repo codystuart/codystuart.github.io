@@ -12,11 +12,9 @@ I believe from this enhancement I have achieved outcomes, three and five. Outcom
 This enhancement taught me the value of environment parity. Transition from a managed cloud lab to a local machine required a deeper understanding of the database connection, and library dependencies. I gained this understanding from setting up the local MongoDB engine, setting up the PyCharm IDE, and installing the required python modules using pip. I faced several challenges with this enhancement, the largest being the environment transition as I had to create what was provided to me before. The database setup script I setup is what finally made me feel like I overcame the challenge there as I was able to repeatably and automatically create a fresh instance of the aac database to use in testing code changes. I also faced several UI issues as I made changes to the aggregation pipeline that caused me to constantly re-evaluate how the data was displayed. In these events I made decisions that I personally feel has improved the UX of the dashboard.
 
 ---
-## Artifacts
+## Original
 
-### Original
-
-#### CRUD_Python_Module.py
+### CRUD_Python_Module.py
 ```python
 # Example Python Code to Insert a Document 
 
@@ -180,7 +178,7 @@ class AnimalShelter(object):
 
 ```
 
-#### ProjectTwoDashboard.ipynb
+### ProjectTwoDashboard.ipynb
 ```python
 # Setup the Jupyter version of Dash
 from jupyter_dash import JupyterDash
@@ -463,9 +461,9 @@ app.run_server()
 ```
 
 ---
-### Enhanced
+## Enhanced
 
-#### Setup_MongoDB.py
+### Setup_MongoDB.py
 ```python
 """
 Author: Cody Stuart
@@ -520,7 +518,7 @@ if __name__ == "__main__":
     setup_database('aac_shelter_outcomes.csv')
 ```
 
-#### CRUD_Python_Module_Enhanced.py
+### CRUD_Python_Module_Enhanced.py
 ```python
 # Example Python Code to Insert a Document 
 
@@ -720,7 +718,7 @@ class AnimalShelter(object):
             raise Exception("Query paramter is required for deletion.")
 ```
 
-#### Dashboard.py
+### Dashboard.py
 ```python
 import base64
 import os
