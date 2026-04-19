@@ -15,4 +15,4 @@ Focused on high-performance systems (Go, C++) and secure on-premises infrastruct
 - **CI/CD:** GitHub Actions
 
 ---
-*Original theme by [Cotes Chao](https://github.com/cotes2020).*
+*Original theme by [Cotes Chao](https://github.com/cotes2020) and can be found and used here [chirpy-starter](https://github.com/cotes2020/chirpy-starter).*
