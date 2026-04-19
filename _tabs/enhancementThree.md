@@ -462,6 +462,7 @@ def update_histogram(viewData):
 app.run_server() 
 ```
 
+---
 ### Enhanced
 
 #### Setup_MongoDB.py
