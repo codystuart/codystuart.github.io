@@ -187,6 +187,7 @@ public class Trie {
 ```
 
 ### TrieNode.java
+<p style="text-indent: 50px; font-style: italic;">
 TrieNode.java provides the structure of the nodes as well as providing a constructor function for creating each node, including the root node. 
 </p>
 
@@ -233,6 +234,7 @@ public class TrieNode {
 ```
 
 ### TrieTest.java
+<p style="text-indent: 50px; font-style: italic;">
 TrieTest.java was added to this enhancement to maintain the spirit of the original assignment. Which was to develop junit tests to verify functionality of the Contact and ContactService java classes. This servers two purposes it provides a quality assurance aspect to the application, as well as assists in confirming full functionality of the prefix tree. 
 </p>
 
